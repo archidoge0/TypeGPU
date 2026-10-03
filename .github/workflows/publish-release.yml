@@ -1,13 +1,6 @@
 name: Publish release to npm
 on:
-  # For manual releases
   workflow_dispatch:
-    inputs:
-      dry-run:
-        description: Whether to perform a dry run of the publish.
-        type: boolean
-        default: true
-
 jobs:
   npm-build:
     if: github.repository == 'software-mansion/TypeGPU'

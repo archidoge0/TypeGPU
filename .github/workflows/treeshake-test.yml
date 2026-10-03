@@ -1,14 +1,7 @@
 name: Tree-shake test
 
 on:
-  pull_request:
   workflow_dispatch:
-    inputs:
-      target_branch:
-        description: 'Target branch to compare against'
-        required: true
-        default: 'main'
-
 jobs:
   treeshake-test:
     if: github.event.pull_request.head.repo.full_name == github.repository

@@ -1,8 +1,7 @@
 name: Resolution time benchmark
 
 on:
-  pull_request:
-
+  workflow_dispatch:
 jobs:
   resolution-time:
     if: github.event.pull_request.head.repo.full_name == github.repository
