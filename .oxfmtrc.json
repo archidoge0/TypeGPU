@@ -1,5 +1,10 @@
 {
   "$schema": "./node_modules/oxfmt/configuration_schema.json",
-  "ignorePatterns": ["**/*.mdx", "**/*.md"],
+  "ignorePatterns": [
+    "**/*.mdx",
+    "**/*.md",
+    ".github/workflows/ghav-*.yml",
+    ".oxfmtrc.json"
+  ],
   "singleQuote": true
 }
